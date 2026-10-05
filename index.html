@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas - RA 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mis Tareas</h1>
+        
+     
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Buscar tarea...">
+        </div>
+
+     
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Añadir nueva tarea..." required>
+            <button type="submit">Agregar</button>
+        </form>
+
+       
+        <div id="loadingState" class="loading">
+            Cargando tareas...
+        </div>
+
+                    
+        <ul id="taskList" style="display: none;"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
